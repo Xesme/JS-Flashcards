@@ -6,7 +6,7 @@ button {
   margin: 10px;
 }
 
-.text {
+.holder_div {
   text-align: center;
 }
 
@@ -17,79 +17,3 @@ button {
 .show-elem {
   display: inline-block;
 }
-
-/*#js {
-  display: inline-block;
-}
-
-#op {
-  display: none;
-}
-
-#var {
-  display: none;
-}
-
-#var-name {
-  display: none;
-}
-
-#func {
-  display: none;
-}
-
-#meth {
-  display: none;
-}
-
-#arg {
-  display: none;
-}
-
-#par {
-  display: none;
-}
-
-#retr {
-  display: none;
-}
-
-#chain {
-  display: none;
-}
-
-#string {
-  display: none;
-}
-
-#boo {
-  display: none;
-}
-
-#und {
-  display: none;
-}
-
-#nan {
-  display: none;
-}
-
-#esc {
-  display: none;
-}
-
-#alert {
-  display: none;
-}
-
-#com {
-  display: none;
-}
-
-#jq {
-  display: none;
-}
-
-#attr {
-  display: none;
-}*/

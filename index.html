@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script
+<head>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
-    <title>Flashcards for JavaScript</title>
-  </head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Flashcards for JavaScript</title>
+</head>
   <body>
     <div class="container">
       <div class="row">
@@ -52,8 +52,8 @@
           <button class="attr" type="button">Attributes</button>
         </div>
       </div>
-      <div class="text">
-        <diclassid="js hidden-elem">
+      <div class="holder_div">
+        <div class="text_div js hidden-elem">
           <p><strong>JavaScript</strong>was developed in 1995, and the official name is ECMA ( European Computer Manufacturers Association). It is a OOP language, meaning is is an object oriented program. Not to be confused with Java. There are a five major components of JavaScript, they are:
             <ul>
               <li>Operators</li>
@@ -64,24 +64,60 @@
             </ul>
           </p>
         </div>
-        <p class="op hidden-elem"><strong>Operators</strong> are symbols (addition, subtraction, etc) used to denote operations within functions.</p>
-        <p class="var hidden-elem"><strong>Variables</strong> can be thought of as a container to store information<p>
-        <p class="var-name hidden-elem"><strong>Variable naming conventions</strong> should always be named in a way that are easy for other developers to understand (i.e. what it is for, or what it is doing). <em>They are case sensitive and so, they should always be named using the the <strong>lowerCamelCase</strong> method. </em></p>
-        <p class="func hidden-elem"><strong>Functions</strong> it is a block of code used specifically for JavaScript. It sets the parameter for code to be excuted.</p>
-        <p class="meth hidden-elem"><strong>Method</strong> is an action ran on a piece of data. Furthermore, the method can be thought of as <em>the message</em>. And <strong>should not</strong> be confused with the response, <em>which is the return</em>.</p>
-        <p class="arg hidden-elem"><strong>Argument</strong> is the local variable available within all fuctions. It always begins with the value 0, but can be modified to other values to manipulate the outcome of the response.</p>
-        <p class="par hidden-elem"><strong>Parameters</strong> are the names listed in the function definition.</p>
-        <p class="retr hidden-elem"><strong>Return</strong> is what the function outputs after recieving the method, and argument from the parameters.</p>
-        <p class="chain hidden-elem"><strong>Chaining methods</strong> is combining multiple methods to the response of a previous method, or variable.</p>
-        <p class="string hidden-elem"><strong>String</strong> is text that is always inside of quotes, you can use single or double.</p>
-        <p class="boo hidden-elem"><strong>Boolean</strong> always returns true or false</p>
-        <p class="und hidden-elem"><strong>Undefined</strong> specifies a currently undefinded value.</p>
-        <p class="nan hidden-elem"><strong>NaN</strong> is an undefined number, such as: 0%0</p>
-        <p class="esc hidden-elem"><strong>Escape</strong> is represented by a \ in order to cancel out any formatting or symbols.</p>
-        <p class="alert hidden-elem"><strong>Alert</strong> is a method used to create a pop-up the user interacts with containing information.</p>
-        <p class="com hidden-elem"><strong>Comments</strong> can be made using 'alt + /' to leave notes for youself or other developers. Can also be used to temporarily disable lines of codes.</p>
-        <p class="jq hidden-elem"><strong>jQuery</strong> is a library of JavaScript.</p>
-        <p class="attr hidden-elem"><strong>Attribute</strong> is the tag of html.</p>
+        <div class="text_div op hidden-elem">
+          <p><strong>Operators</strong> are symbols (addition, subtraction, etc) used to denote operations within functions.</p>
+        </div>
+        <div class="text_div var hidden-elem">
+          <p><strong>Variables</strong> can be thought of as a container to store information</p>
+        </div>
+        <div class="text_div var-name hidden-elem">
+          <p><strong>Variable naming conventions</strong> should always be named in a way that are easy for other developers to understand (i.e. what it is for, or what it is doing). <em>They are case sensitive and so, they should always be named using the the <strong>lowerCamelCase</strong>method.</em></p>
+        </div>
+        <div class="text_div func hidden-elem">
+          <p><strong>Functions</strong> it is a block of code used specifically for JavaScript. It sets the parameter for code to be excuted.</p>
+        </div>
+        <div class="text_div meth hidden-elem">
+          <p><strong>Method</strong> is an action ran on a piece of data. Furthermore, the method can be thought of as <em>the message</em>. And <strong>should not</strong> be confused with the response, <em>which is the return</em>.</p>
+          </div>
+        <div class="text_div arg hidden-elem">
+          <p><strong>Argument</strong> is the local variable available within all fuctions. It always begins with the value 0, but can be modified to other values to manipulate the outcome of the response.</p>
+        </div>
+        <div class="text_div par hidden-elem">
+          <p><strong>Parameters</strong> are the names listed in the function definition.</p>
+        </div>
+        <div class="text_div retr hidden-elem">
+          <p><strong>Return</strong> is what the function outputs after recieving the method, and argument from the parameters.</p>
+        </div>
+        <div class="text_div chain hidden-elem">
+          <p><strong>Chaining methods</strong> is combining multiple methods to the response of a previous method, or variable.</p>
+        </div>
+        <div class="text_div string hidden-elem">
+          <p><strong>String</strong> is text that is always inside of quotes, you can use single or double.</p>
+        </div>
+        <div class="text_div boo hidden-elem">
+          <p><strong>Boolean</strong> always returns true or false</p>
+        </div>
+        <div class="text_div und hidden-elem">
+          <p><strong>Undefined</strong> specifies a currently undefinded value.</p>
+        </div>
+        <div class="text_div nan hidden-elem">
+          <p><strong>NaN</strong> is an undefined number, such as: 0%0</p>
+        </div>
+        <div class="text_div esc hidden-elem">
+          <p><strong>Escape</strong> is represented by a \ in order to cancel out any formatting or symbols.</p>
+        </div>
+        <div class="text_div alert hidden-elem">
+          <p><strong>Alert</strong> is a method used to create a pop-up the user interacts with containing information.</p>
+        </div>
+        <div class="text_div com hidden-elem">
+          <p><strong>Comments</strong> can be made using 'alt + /' to leave notes for youself or other developers. Can also be used to temporarily disable lines of codes.</p>
+        </div>
+        <div class="text_div jq hidden-elem">
+          <p><strong>jQuery</strong> is a library of JavaScript.</p>
+        </div>
+        <div class="text_div attr hidden-elem">
+          <p><strong>Attribute</strong> is the tag of html.</p>
+        </div>
       </div>
     </div>
   </body>

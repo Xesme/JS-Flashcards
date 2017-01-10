@@ -6,8 +6,20 @@ button {
   margin: 10px;
 }
 
-#js {
+.text {
+  text-align: center;
+}
+
+.hidden-elem {
   display: none;
+}
+
+.show-elem {
+  display: inline-block;
+}
+
+/*#js {
+  display: inline-block;
 }
 
 #op {
@@ -80,4 +92,4 @@ button {
 
 #attr {
   display: none;
-}
+}*/

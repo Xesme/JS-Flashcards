@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
     <title>Flashcards for JavaScript</title>
@@ -12,45 +15,45 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
-          <button type="button">JavaScript (JS)</button>
-          <button type="button">Operators</button>
-          <button type="button">Variables</button>
-          <button type="button">Variable naming conventions</button>
+          <button class="js"  type="button">JavaScript (JS)</button>
+          <button class="op" type="button">Operators</button>
+          <button class="var" type="button">Variables</button>
+          <button class="var-name" type="button">Variable naming conventions</button>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3">
-          <button type="button">Functions</button>
-          <button type="button">Methods</button>
-          <button type="button">Argument</button>
-          <button type="button">Parameter</button>
+          <button class="func" type="button">Functions</button>
+          <button class="meth" type="button">Methods</button>
+          <button class="arg" type="button">Argument</button>
+          <button class="par" type="button">Parameter</button>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3">
-          <button type="button">Return</button>
-          <button type="button">Chaining methods</button>
-          <button type="button">Strings</button>
-          <button type="button">Booleans</button>
+          <button class="retr" type="button">Return</button>
+          <button class="chain" type="button">Chaining methods</button>
+          <button class="string" type="button">Strings</button>
+          <button class="boo" type="button">Booleans</button>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3">
-          <button type="button">Undefined</button>
-          <button type="button">NaN</button>
-          <button type="button">Escape</button>
-          <button type="button">Alert</button>
+          <button class="und" type="button">Undefined</button>
+          <button class="nan" type="button">NaN</button>
+          <button class="esc" type="button">Escape</button>
+          <button class="alert" type="button">Alert</button>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <button type="button">Comments</button>
-          <button type="button">jQuery</button>
-          <button type="button">Attributes</button>
+          <button class="com" type="button">Comments</button>
+          <button class="jq" type="button">jQuery</button>
+          <button class="attr" type="button">Attributes</button>
         </div>
       </div>
       <div class="text">
-        <div id="js">
+        <diclassid="js hidden-elem">
           <p><strong>JavaScript</strong>was developed in 1995, and the official name is ECMA ( European Computer Manufacturers Association). It is a OOP language, meaning is is an object oriented program. Not to be confused with Java. There are a five major components of JavaScript, they are:
             <ul>
               <li>Operators</li>
@@ -61,24 +64,24 @@
             </ul>
           </p>
         </div>
-        <p id="op"><strong>Operators</strong> are symbols (addition, subtraction, etc) used to denote operations within functions.</p>
-        <p id="var"><strong>Variables</strong> can be thought of as a container to store information<p>
-        <p id="var-name"><strong>Variable naming conventions</strong> should always be named in a way that are easy for other developers to understand (i.e. what it is for, or what it is doing). <em>They are case sensitive and so, they should always be named using the the <strong>lowerCamelCase</strong> method. </em></p>
-        <p id="func"><strong>Functions</strong> it is a block of code used specifically for JavaScript. It sets the parameter for code to be excuted.</p>
-        <p id="meth"><strong>Method</strong> is an action ran on a piece of data. Furthermore, the method can be thought of as <em>the message</em>. And <strong>should not</strong> be confused with the response, <em>which is the return</em>.</p>
-        <p id="arg"><strong>Argument</strong> is the local variable available within all fuctions. It always begins with the value 0, but can be modified to other values to manipulate the outcome of the response.</p>
-        <p id="par"><strong>Parameters</strong> are the names listed in the function definition.</p>
-        <p id="retr"><strong>Return</strong> is what the function outputs after recieving the method, and argument from the parameters.</p>
-        <p id="chain"><strong>Chaining methods</strong> is combining multiple methods to the response of a previous method, or variable.</p>
-        <p id="string"><strong>String</strong> is text that is always inside of quotes, you can use single or double.</p>
-        <p id="boo"><strong>Boolean</strong> always returns true or false</p>
-        <p id="und"><strong>Undefined</strong> specifies a currently undefinded value.</p>
-        <p id="nan"><strong>NaN</strong> is an undefined number, such as: 0%0</p>
-        <p id="esc"><strong>Escape</strong> is represented by a \ in order to cancel out any formatting or symbols.</p>
-        <p id="alert"><strong>Alert</strong> is a method used to create a pop-up the user interacts with containing information.</p>
-        <p id="com"><strong>Comments</strong> can be made using 'alt + /' to leave notes for youself or other developers. Can also be used to temporarily disable lines of codes.</p>
-        <p id="jq"><strong>jQuery</strong> is a library of JavaScript.</p>
-        <p id="attr"><strong>Attribute</strong> is the tag of html.</p>
+        <p class="op hidden-elem"><strong>Operators</strong> are symbols (addition, subtraction, etc) used to denote operations within functions.</p>
+        <p class="var hidden-elem"><strong>Variables</strong> can be thought of as a container to store information<p>
+        <p class="var-name hidden-elem"><strong>Variable naming conventions</strong> should always be named in a way that are easy for other developers to understand (i.e. what it is for, or what it is doing). <em>They are case sensitive and so, they should always be named using the the <strong>lowerCamelCase</strong> method. </em></p>
+        <p class="func hidden-elem"><strong>Functions</strong> it is a block of code used specifically for JavaScript. It sets the parameter for code to be excuted.</p>
+        <p class="meth hidden-elem"><strong>Method</strong> is an action ran on a piece of data. Furthermore, the method can be thought of as <em>the message</em>. And <strong>should not</strong> be confused with the response, <em>which is the return</em>.</p>
+        <p class="arg hidden-elem"><strong>Argument</strong> is the local variable available within all fuctions. It always begins with the value 0, but can be modified to other values to manipulate the outcome of the response.</p>
+        <p class="par hidden-elem"><strong>Parameters</strong> are the names listed in the function definition.</p>
+        <p class="retr hidden-elem"><strong>Return</strong> is what the function outputs after recieving the method, and argument from the parameters.</p>
+        <p class="chain hidden-elem"><strong>Chaining methods</strong> is combining multiple methods to the response of a previous method, or variable.</p>
+        <p class="string hidden-elem"><strong>String</strong> is text that is always inside of quotes, you can use single or double.</p>
+        <p class="boo hidden-elem"><strong>Boolean</strong> always returns true or false</p>
+        <p class="und hidden-elem"><strong>Undefined</strong> specifies a currently undefinded value.</p>
+        <p class="nan hidden-elem"><strong>NaN</strong> is an undefined number, such as: 0%0</p>
+        <p class="esc hidden-elem"><strong>Escape</strong> is represented by a \ in order to cancel out any formatting or symbols.</p>
+        <p class="alert hidden-elem"><strong>Alert</strong> is a method used to create a pop-up the user interacts with containing information.</p>
+        <p class="com hidden-elem"><strong>Comments</strong> can be made using 'alt + /' to leave notes for youself or other developers. Can also be used to temporarily disable lines of codes.</p>
+        <p class="jq hidden-elem"><strong>jQuery</strong> is a library of JavaScript.</p>
+        <p class="attr hidden-elem"><strong>Attribute</strong> is the tag of html.</p>
       </div>
     </div>
   </body>

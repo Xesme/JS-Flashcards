@@ -1,9 +1,35 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-image: url("../img/bb.gif");
+  background-color: black;
+}
+
 .container {
   width: 100%;
+  text-align: center;
 }
 
 button {
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+  background-color: #C5FF5A;
   margin: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#pika:hover {
+  transform: rotate(180deg);
+}
+
+#t {
+  height: 400px;
+  width: auto;
 }
 
 .holder_div {
@@ -15,6 +41,7 @@ button {
 }
 
 .show-elem {
+  background-color: #C5FF5A;
   border: 2px solid black;
   padding: 10px;
   display: inline-block;

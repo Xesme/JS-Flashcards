@@ -3,10 +3,11 @@ $(document).ready(function() {
   $("button").click(function(){
     var addOrRemove = true;
     // console.log("'."+this.className+"'");
-    $(".text_div").removeClass("show-elem hidden-elem");
-    $(".text_div").addClass("hidden-elem");
-    $("div."+this.className).removeClass("hidden-elem");
-    $("div."+this.className).addClass("show-elem");
+      $(".text_div").removeClass("show-elem hidden-elem");
+      $(".text_div").addClass("hidden-elem");
+      $("div."+this.className).removeClass("hidden-elem");
+      $("div."+this.className).addClass("show-elem");
+
     // $("div."+this.className).toggleClass("show-elem", $("div."+this.className).hasClass("show-elem"));
     // console.log(typeof(addOrRemove));
   })
